@@ -6,6 +6,9 @@ public class Coin {
     public Coin(double pt) {
         pTails = pt;
     }
+    public Coin() {
+        pTails = 0.5;
+    }
     public String getState() {
         return state;
     }
