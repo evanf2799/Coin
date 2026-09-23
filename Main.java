@@ -7,5 +7,8 @@ public class Main {
         System.out.println(penny.getState());
         System.out.println(penny.getHeads());
         System.out.println(penny.getTails());
+        penny.flip(99);
+        System.out.println(penny.getHeads());
+        System.out.println(penny.getTails());
     }
 }
