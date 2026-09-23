@@ -20,4 +20,10 @@ public class Coin {
             tails++;
         }
     }
+    public void flip(int flips) {
+        while (flips > 0) {
+            flip();
+            flips--;
+        }
+    }
 }
