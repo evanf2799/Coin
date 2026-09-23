@@ -1,13 +1,23 @@
 public class Coin {
     private String state;
+    private int heads;
+    private int tails;
     public String getState() {
         return state;
+    }
+    public int getHeads() {
+        return heads;
+    }
+    public int getTails() {
+        return tails;
     }
     public void flip() {
         if(Math.random() < 0.5) {
             state = "heads";
+            heads++;
         } else {
             state = "tails";
+            tails++;
         }
     }
 }
