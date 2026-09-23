@@ -16,7 +16,7 @@ public class Coin {
         return tails;
     }
     public void flip() {
-        if(Math.random() < 0.5) {
+        if(Math.random() < pTails) {
             state = "heads";
             heads++;
         } else {
