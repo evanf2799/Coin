@@ -2,6 +2,10 @@ public class Coin {
     private String state;
     private int heads;
     private int tails;
+    private double pTails;
+    public Coin(double pt) {
+        pTails = pt;
+    }
     public String getState() {
         return state;
     }
