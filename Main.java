@@ -10,5 +10,9 @@ public class Main {
         penny.flip(99);
         System.out.println(penny.getHeads());
         System.out.println(penny.getTails());
+        Coin nickel = new Coin(0.9);
+        nickel.flip(100);
+        System.out.println(nickel.getHeads());
+        System.out.println(nickel.getTails());
     }
 }
