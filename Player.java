@@ -3,4 +3,7 @@ public class Player {
     public Player(int b) {
         balance = b;
     }
+    public int getBalance() {
+        return balance;
+    }
 }
