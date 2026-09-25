@@ -14,5 +14,8 @@ public class Main {
         nickel.flip(100);
         System.out.println(nickel.getHeads());
         System.out.println(nickel.getTails());
+        nickel.setPtails(0.5);
+        System.out.println(nickel.getHeads());
+        System.out.println(nickel.getTails());
     }
 }
