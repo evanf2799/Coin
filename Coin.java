@@ -9,6 +9,9 @@ public class Coin {
     public Coin() {
         pTails = 0.5;
     }
+    public void setPtails(double pt) {
+        pTails = pt;
+    }
     public String getState() {
         return state;
     }
