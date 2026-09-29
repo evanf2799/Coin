@@ -6,12 +6,14 @@ public class Player {
     public int getBalance() {
         return balance;
     }
-    public void flip(Coin c, String guess, int risk) {
+    public boolean flip(Coin c, String guess, int risk) {
         c.flip();
+        boolean correct = c.getState().equals(guess);
         if (c.getState().equals(guess)) {
             balance += risk;
         } else {
             balance -= risk;
         }
+        return correct;
     }
 }
