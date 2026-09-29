@@ -17,7 +17,7 @@ public class Game {
         if (correct) {
             System.out.println("Congrats! Your balance is: " + player.getBalance());
         } else {
-                
+                System.out.println("Sorry! Your balance is: " + player.getBalance());
         }
     }
 }
