@@ -13,5 +13,11 @@ public class Game {
         int risk = s.nextInt();
         System.out.println("Heads or tails?");
         String guess = s.next().toLowerCase();
+        boolean correct = player.flip(coin, guess, risk);
+        if (correct) {
+            System.out.println("Congrats! Your balance is: " + player.getBalance());
+        } else {
+                
+        }
     }
 }
