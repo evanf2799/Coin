@@ -23,6 +23,7 @@ public class Game {
             play();
         } else {
             System.out.println("GAME OVER");
+            s.close();
         }
     }
     private int getRisk() {
@@ -30,9 +31,11 @@ public class Game {
         System.out.println("How much would you like to risk?");
         int risk = s.nextInt();
         if (risk <= player.getBalance()) {
+            s.close();
             return risk;
         } else {
             System.out.println("Your risk exceeds your balance.");
+            s.close();
             return getRisk();
         }
     }
