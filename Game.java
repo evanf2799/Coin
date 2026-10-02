@@ -2,13 +2,13 @@ import java.util.Scanner;
 public class Game {
     private Player player;
     private Coin coin;
+    private Scanner s = new Scanner(System.in);
     public Game() {
         player = new Player(100);
         coin = new Coin(Math.random());
         System.out.println("Your initial balance is: " + player.getBalance());
     }
     public void play() {
-        Scanner s = new Scanner(System.in);
         int risk = getRisk();
         System.out.println("Heads or tails?");
         String guess = s.next().toLowerCase();
@@ -27,15 +27,12 @@ public class Game {
         }
     }
     private int getRisk() {
-        Scanner s = new Scanner(System.in);
         System.out.println("How much would you like to risk?");
         int risk = s.nextInt();
         if (risk <= player.getBalance()) {
-            s.close();
             return risk;
         } else {
             System.out.println("Your risk exceeds your balance.");
-            s.close();
             return getRisk();
         }
     }
